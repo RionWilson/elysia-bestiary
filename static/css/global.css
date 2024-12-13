@@ -1,0 +1,111 @@
+
+/* Page */
+
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #000;
+}
+
+#viewport
+{
+    position: fixed; top: 0; bottom: 0; left: 0; right: 0;
+    overflow: hidden;
+}
+
+/***** Viewport Breakpoints *****/
+
+/* Desktop: 1366-1920px */
+
+/* Mobile: 320-480px */
+
+/* Mobile: Scroll */
+
+@media screen and (max-width: 319px)
+{
+    #viewport
+    {
+        overflow-x: scroll;
+    }
+
+    #content
+    {
+        width: 320px; overflow-x: hidden;
+    }
+}
+
+/* Hybrid: 960-1280px */
+
+/* Hybrid: Scroll */
+
+@media screen and (pointer: fine) and (min-width: 481px) and (max-width: 937px) /* Hybrid - Breakpoint */
+{
+    #viewport
+    {
+        overflow-x: scroll;
+    }
+
+    #content
+    {
+        width: 938px; overflow-x: hidden;
+    }
+}
+
+/* Tablet: 600-1024px */
+
+/* Tablet: Scroll */
+
+@media screen and (pointer: coarse) and (min-width: 481px) and (max-width: 599px)
+{
+    #viewport
+    {
+        overflow-x: scroll;
+    }
+
+    #content
+    {
+        width: 600px; overflow-x: hidden;
+    }
+}
+
+/* Fonts */
+
+@font-face
+{
+    font-family: chorus;
+    src: url("/static/fonts/Chorus-Regular.otf");
+}
+
+@font-face
+{
+    font-family: comfortaa;
+    src: url("/static/fonts/Comfortaa-Regular.otf");
+}
+
+@font-face
+{
+    font-family: conthrax;
+    src: url("/static/fonts/Conthrax-Regular.otf");
+}
+
+@font-face
+{
+    font-family: lexend;
+    src: url("/static/fonts/Lexend-Regular.otf");
+}
+
+@font-face
+{
+    font-family: lora;
+    src: url("/static/fonts/Lora-Regular.otf");
+}
+
+@font-face
+{
+    font-family: outfit;
+    src: url("/static/fonts/Outfit-Regular.otf");
+}
